@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Design template for Stjørdal mannskor
+Design template for Terje Lundemo Tangen
 
 == Changelog ==
 
