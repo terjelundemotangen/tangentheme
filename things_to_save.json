@@ -1,0 +1,309 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+	"settings": {
+		"appearanceTools": true,
+    "color": {
+			"background": true,
+			"defaultPalette": true,
+			"custom": true,
+			"palette": [
+				{
+					"slug": "black",
+					"color": "#000000",
+					"name": "Black"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
+				},
+				{
+					"slug": "base",
+					"color": "#1e1e1e",
+					"name": "Base"
+				},
+				{
+					"slug": "primary",
+					"color": "rgb(37, 109, 145)",
+					"name": "Primary"
+				},
+				{
+					"slug": "transparent",
+					"color": "transparent",
+					"name": "Transparent"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "main-background",
+					"gradient": "linear-gradient(#3981a5 0%, #50b7ea 100%)",
+					"name": "Main background"
+				},
+				{
+					"slug": "primary-white",
+					"gradient": "linear-gradient(#0073aa 49.9%,#fff 50%)",
+					"name": "Primary color to white"
+				},
+				{
+					"slug": "white-primary",
+					"gradient": "linear-gradient(#fff 49.9%,#0073aa 50%)",
+					"name": "Horizontal white to Primary color"
+				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#00a0d2",
+						"#0073aa"
+					],
+					"slug": "secondary-primary",
+					"name": "Secondary and primary"
+				},
+				{
+					"colors": [
+						"#0073aa",
+						"#f0f0f0"
+					],
+					"slug": "primary-contrast",
+					"name": "Primary and Contrast"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "800px",
+			"wideSize": "1280px"
+		},
+		"spacing": {
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			],
+      "spacingSizes": [
+				{
+					"name": "1",
+					"size": "0.5rem",
+					"slug": "10"
+				},
+				{
+					"name": "2",
+					"size": "clamp(0.75rem, 0.5rem + 0.625vw, 1rem",
+					"slug": "20"
+				},
+				{
+					"name": "3",
+					"size": "clamp(1.25rem, 1rem + 0.625vw, 1.5rem",
+					"slug": "30"
+				},
+				{
+					"name": "4",
+					"size": "clamp(1.75rem, 1.5rem + 0.625vw, 2rem",
+					"slug": "40"
+				},
+				{
+					"name": "5",
+					"size": "clamp(2.25rem, 2rem + 0.625vw, 2.5rem",
+					"slug": "50"
+				},
+				{
+					"name": "6",
+					"size": "clamp(3rem, 2.5rem + 1.25vw, 3.5rem",
+					"slug": "60"
+				},
+				{
+					"name": "7",
+					"size": "clamp(4rem, 3rem + 2.5vw, 5rem",
+					"slug": "70"
+				}
+			]
+		},
+		"typography": {
+      "customFontSize": true,
+			"dropCap": true,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "Roboto",
+					"slug": "roboto",
+					"fontFace": [
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/roboto_normal_300.ttf"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/roboto_normal_400.ttf"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/roboto_normal_700.ttf"
+							]
+						}
+					]
+				}
+			],
+      "fontSizes": [
+				{
+					"slug": "small",
+					"size": "1rem",
+					"name": "Small",
+					"fluid": false
+				},
+				{
+					"slug": "medium",
+					"size": "1.25rem",
+					"name": "Medium",
+					"fluid": {
+						"min": "1rem",
+						"max": "1.125rem"
+					}
+				},
+				{
+					"slug": "large",
+					"size": "1.75rem",
+					"name": "Large",
+					"fluid": {
+						"min": "1.75rem",
+						"max": "2rem"
+					}
+				},
+				{
+					"slug": "x-large",
+					"size": "2.75rem",
+					"name": "XL",
+					"fluid": {
+						"min": "2.5rem",
+						"max": "2.75rem"
+					}
+				},
+				{
+					"slug": "xx-large",
+					"size": "3.75rem",
+					"name": "XXL",
+					"fluid": {
+						"min": "3rem",
+						"max": "3.75rem"
+					}
+				}
+			],
+      "fontStyle": true,
+			"fontWeight": true,
+			"letterSpacing": true,
+			"textDecoration": true,
+			"textTransform": true
+		},
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+		"useRootPaddingAwareAlignments": true
+	},
+  "styles": {
+		"blocks": {
+      "core/navigation": {
+        "spacing": {
+          "padding": {
+            "top": "var(--wp--preset--spacing--30)",
+            "bottom": "var(--wp--preset--spacing--30)",
+            "left": "var(--wp--preset--spacing--10)",
+            "right": "var(--wp--preset--spacing--10)"
+          }
+        }
+      },
+			"core/button": {
+				"border": {
+					"radius": "5px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--primary)"
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--10)",
+						"left": "var(--wp--preset--spacing--40)",
+						"right": "var(--wp--preset--spacing--40)",
+						"top": "var(--wp--preset--spacing--10)"
+					}
+				},
+				"typography": {
+					"fontStyle": "normal",
+					"fontWeight": "300",
+					"textTransform": "uppercase"
+				},
+				"variations": {
+					"outline": {
+						"color": {
+							"background": "var(--wp--preset--color--transparent)",
+							"text": "var(--wp--preset--color--transparent)"
+						}
+					}
+				}
+			}
+		},
+		"elements": {
+			"button": {
+				":focus": {
+					"outline": {
+						"offset": "3px",
+						"width": "2px",
+						"style": "solid",
+						"color": "var(--wp--preset--color--primary)"
+					}
+				},
+				":hover": {
+					"outline": {
+						"offset": "3px",
+						"width": "2px",
+						"style": "solid",
+						"color": "var(--wp--preset--color--primary)"
+					}
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"top": "0px",
+				"right": "2rem",
+				"bottom": "0px",
+				"left": "2rem"
+			},
+			"blockGap": "var(--wp--preset--spacing--30)"
+		},
+		"color": {
+			"background": "var(--wp--preset--color--main-background)",
+			"text": "var(--wp--preset--color--contrast)"
+		},
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontFamily": "var(--wp--preset--font-family--roboto)",
+			"lineHeight": "1.5"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	],
+	"version": 2
+}

@@ -1,0 +1,42 @@
+/*
+Theme Name: tangen
+Theme URI: https://github.com/terjelundemotangen/tangentheme
+Author: Terje Lundemo Tangen
+Author URI: https://terjetangen.no
+Description: Design template for Terje L. Tangen
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 5.7
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tangen
+Tags: one-column, full-site-editing, template-editing, 
+*/
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #000000 0%, #ff9b02 100%);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-attachment: fixed;
+}
+
+section {
+  /* margin-top: 2rem !important; */
+  background-color: white;
+  border-radius: 15px !important;
+  min-height: 90vh;
+  -webkit-box-shadow: 4px 7px 28px 0px rgba(0,0,0,0.54);
+  -moz-box-shadow: 4px 7px 28px 0px rgba(0,0,0,0.54);
+  box-shadow: 4px 7px 28px 0px rgba(0,0,0,0.54);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
