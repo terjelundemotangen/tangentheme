@@ -12,6 +12,9 @@ Design template for Terje Lundemo Tangen
 
 == Changelog ==
 
+= 1.0.2 =
+* Changed github update to Git Updater
+
 = 1.0.1 =
 * Update from github.com
 
